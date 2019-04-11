@@ -10,7 +10,11 @@ val someMoreNumbers = arrayOf(1, 2, 3, 4, 5)
 val firstNumber = someMoreNumbers[0]
 println(firstNumber)
 
-// Arrays are immutable, their elements can not be changed
+// Arrays are fixed in side, elements can't be added or removed
 
 // someMoreNumbers.add(6) -> ERROR
 // someMoreNumbers.remove(5)  -> ERROR
+
+// They are mutable, however. Existing elements can be changed.
+someMoreNumbers[0] = 0
+println(someMoreNumbers[0])
